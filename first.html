@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="first.css">
+	<title>java script</title>
+</head>
+<body>
+	<div class="container-1">
+	   <h2>chalange 1 your age in a days</h2>
+	 <div class="flex-box-container-1">
+
+	   	  <div >
+			<button class="btn btn-primary" onclick="ageInDays()">click me</button> 	
+		  </div>
+	   <div>
+			<button class="btn btn-danger" onclick="reset()">reset</button>	 	
+	   </div>
+
+	</div>
+
+	<div class="flex-box-container-1">
+		<div id="flex-box-result"></div>	
+	</div>
+</div>
+
+  <div class="container-2">
+  	    <h2>chalange 2 cat generate</h2>
+  	    <button class="btn btn-success" id="cat-generator" onclick="generate()">Generate cat</button>
+  	    <div class="flex-box-container-2" id="flex-cat-gen">
+                 <!-- <img src="http://thecatapi.com/api/images/get?formate=scr&type=gif&size=small" alt="">
+                 <img src="http://thecatapi.com/api/images/get?formate=scr&type=gif&size=small" alt="">
+                 <img src="http://thecatapi.com/api/images/get?formate=scr&type=gif&size=small" alt="">
+                 <img src="http://thecatapi.com/api/images/get?formate=scr&type=gif&size=small" alt="">
+                 <img src="http://thecatapi.com/api/images/get?formate=scr&type=gif&size=small" alt="">
+                  -->
+
+  	    	
+  	    </div>
+  	
+  </div>
+
+  <div class="container-3">
+  	   	<h2>chalange 3 rock paper scissors</h2>
+  	   	<div class="flex-box-rps" id="flex-box-rps-div">
+  	   		<img id="rock" src="/home/abhishek/javascript_project/rock.jpg" height="150" width="150" alt="" onclick="rpsGame(this)">
+  	   		<img id="paper" src="/home/abhishek/javascript_project/paper.jpg" height="150" width="150" alt="" onclick="rpsGame(this)">
+  	   		<img id="scissors" src="/home/abhishek/javascript_project/scissors.jpg" height="150" width="150" alt="" onclick="rpsGame(this)">
+  	   		
+  	   	</div>
+  	
+  </div>
+
+  <div class="container-4">
+  	     <h2 id="change-my-color">chalange 4 changing the color of all Button</h2>
+  	     <div class="flex-box-pick-color">
+  	     	  <form action="">
+  	     	  	<select name="backdrop" id="background" onchange="buttonColorChange(this)">
+  	     	  		<option value="random">random</option>
+  	     	  		<option value="red">red</option>
+  	     	  		<option value="green">green</option>
+  	     	  		<option value="reset">reset</option>
+  	     	  		
+  	     	  	</select>
+  	     	  </form>
+  	     	  <button class="btn btn-primary">wahh!</button>
+  	     	  <button class="btn btn-danger">yahoo!</button>
+  	     	  <button class="btn btn-warning">google!</button>
+  	     	  <button class="btn btn-success">facebook!</button>
+  	     </div>
+  	
+  </div>
+
+  <div class="container-5">
+  	    <h2>chalange 5 Blackjack</h2>
+  	    <h3><span id="blackjack-result">let's play</span></h3>
+  	    <div class="flex-box-blackjack-row-1">
+  	    	<div id="your-box">
+  	    		<h3>You:<span id="your-blackjack-result">0</span></h3>	
+  	    	</div>
+
+  	    	<div id="dealer-box">
+  	    		<h3>dealer:<span id="dealer-blackjack-result">0</span></h3>
+  	    		
+  	    	</div>	
+  	    </div>
+
+  	    <div class="flex-box-blackjack-row-2">
+  	    	<div>
+  	    	<button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">Hit</button>
+  	    	<button class="btn-lg btn-warning mr-2" id="blackjack-stand-button">Stand</button>
+  	    	<button class="btn-lg btn-danger" id="blackjack-deal-button">Deal</button>
+  	    	</div>
+  	    </div>
+
+  	    <div class="flex-box-blackjack-row-3">
+  	    	 <table>
+
+       		   <tr>
+  	    			<th>win</th>
+  	    			<th>loss</th>
+  	    			<th>draw</th>
+  	    	   </tr>
+
+  	    	   <tr>
+  	    	   	  	<td><span id="win">0</span></td>
+  	    	   	  	<td><span id="loss">0</span></td>
+  	    	   	  	<td><span id="draw">0</span></td>	 
+  	    	   </tr>
+
+  	    	</table>
+
+  	    </div>
+  	
+  </div>
+
+
+	<script src="first.js"></script>
+
+</body>
+</html>
